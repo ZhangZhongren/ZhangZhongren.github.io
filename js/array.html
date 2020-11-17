@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数组的一些操作方法 | zzr</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.992cb7aa.css" as="style"><link rel="preload" href="/assets/js/app.b15ac938.js" as="script"><link rel="preload" href="/assets/js/2.84813aa5.js" as="script"><link rel="preload" href="/assets/js/17.6c42a29b.js" as="script"><link rel="prefetch" href="/assets/js/10.c97d61c6.js"><link rel="prefetch" href="/assets/js/11.5a108636.js"><link rel="prefetch" href="/assets/js/12.371b0a1f.js"><link rel="prefetch" href="/assets/js/13.de4bd4cd.js"><link rel="prefetch" href="/assets/js/14.7d3258d2.js"><link rel="prefetch" href="/assets/js/15.3e52290e.js"><link rel="prefetch" href="/assets/js/16.048d61a6.js"><link rel="prefetch" href="/assets/js/18.60f0be46.js"><link rel="prefetch" href="/assets/js/19.89f2321a.js"><link rel="prefetch" href="/assets/js/20.a3b1f205.js"><link rel="prefetch" href="/assets/js/21.fa2f9dab.js"><link rel="prefetch" href="/assets/js/22.9f0efc31.js"><link rel="prefetch" href="/assets/js/23.19f6b233.js"><link rel="prefetch" href="/assets/js/24.f3a043af.js"><link rel="prefetch" href="/assets/js/25.226393a9.js"><link rel="prefetch" href="/assets/js/26.94ffbcb5.js"><link rel="prefetch" href="/assets/js/27.5d96317d.js"><link rel="prefetch" href="/assets/js/28.0611eacd.js"><link rel="prefetch" href="/assets/js/29.aa4d2b41.js"><link rel="prefetch" href="/assets/js/3.90d40da7.js"><link rel="prefetch" href="/assets/js/30.1b26cce0.js"><link rel="prefetch" href="/assets/js/31.b13ec9ce.js"><link rel="prefetch" href="/assets/js/32.a109e1b7.js"><link rel="prefetch" href="/assets/js/33.abbd9c0f.js"><link rel="prefetch" href="/assets/js/34.5a9f6f1f.js"><link rel="prefetch" href="/assets/js/35.7ca7adf9.js"><link rel="prefetch" href="/assets/js/36.0a3c2aed.js"><link rel="prefetch" href="/assets/js/37.4e08bb6a.js"><link rel="prefetch" href="/assets/js/38.547662f9.js"><link rel="prefetch" href="/assets/js/39.900b0212.js"><link rel="prefetch" href="/assets/js/4.7659a456.js"><link rel="prefetch" href="/assets/js/40.fc15cb95.js"><link rel="prefetch" href="/assets/js/41.f80790cf.js"><link rel="prefetch" href="/assets/js/42.d885c968.js"><link rel="prefetch" href="/assets/js/43.c5e366dc.js"><link rel="prefetch" href="/assets/js/5.66bb5b27.js"><link rel="prefetch" href="/assets/js/6.f95ea75e.js"><link rel="prefetch" href="/assets/js/7.b10a0e94.js"><link rel="prefetch" href="/assets/js/8.89a503e5.js"><link rel="prefetch" href="/assets/js/9.2dca9599.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.992cb7aa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zzr</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js/" class="nav-link router-link-active">
+  js
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link">
+  nuxt
+</a></div><div class="nav-item"><a href="/codereview/" class="nav-link">
+  编码规范
+</a></div><div class="nav-item"><a href="/question/" class="nav-link">
+  问题收录
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js/" class="nav-link router-link-active">
+  js
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link">
+  nuxt
+</a></div><div class="nav-item"><a href="/codereview/" class="nav-link">
+  编码规范
+</a></div><div class="nav-item"><a href="/question/" class="nav-link">
+  问题收录
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/js/" aria-current="page" class="sidebar-link">js</a></li><li><a href="/js/array.html" aria-current="page" class="active sidebar-link">数组</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js/array.html#获取两个数组的交集-下标、-值的几集合" class="sidebar-link">获取两个数组的交集 =&gt; 下标、 值的几集合</a></li></ul></li><li><a href="/js/date.html" class="sidebar-link">日期</a></li><li><a href="/js/function.html" class="sidebar-link">函数</a></li><li><a href="/js/npmScript.html" class="sidebar-link">npmScript</a></li><li><a href="/js/regexp.html" class="sidebar-link">regexp</a></li><li><a href="/js/axios.html" class="sidebar-link">axios</a></li><li><a href="/js/fetch.html" class="sidebar-link">fetch</a></li><li><a href="/js/taro.html" class="sidebar-link">taro</a></li><li><a href="/js/jsFunc.html" class="sidebar-link">jsFunc</a></li><li><a href="/js/loadFile.html" class="sidebar-link">文件下载</a></li><li><a href="/js/event.html" class="sidebar-link">事件</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数组的一些操作方法"><a href="#数组的一些操作方法" class="header-anchor">#</a> 数组的一些操作方法</h1> <h2 id="获取两个数组的交集-下标、-值的几集合"><a href="#获取两个数组的交集-下标、-值的几集合" class="header-anchor">#</a> 获取两个数组的交集 =&gt; 下标、 值的几集合</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token keyword">function</span> <span class="token function">getIntersection</span><span class="token punctuation">(</span><span class="token parameter">first <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> second <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> intersection1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">let</span> intersection2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  first<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    second<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token parameter">v</span> <span class="token operator">=&gt;</span> v <span class="token operator">===</span> item<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> intersection1<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        firstIndex<span class="token operator">:</span> index<span class="token punctuation">,</span>
+        val<span class="token operator">:</span> item
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  second<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    first<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token parameter">v</span> <span class="token operator">=&gt;</span> v <span class="token operator">===</span> item<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> intersection2<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        firstIndex<span class="token operator">:</span> index<span class="token punctuation">,</span>
+        val<span class="token operator">:</span> item
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    intersection1<span class="token punctuation">,</span>
+    intersection2
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token function">getIntersection</span><span class="token punctuation">(</span>arr1<span class="token punctuation">,</span> arr2<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js/" class="prev router-link-active">
+        js
+      </a></span> <span class="next"><a href="/js/date.html">
+        日期
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b15ac938.js" defer></script><script src="/assets/js/2.84813aa5.js" defer></script><script src="/assets/js/17.6c42a29b.js" defer></script>
+  </body>
+</html>

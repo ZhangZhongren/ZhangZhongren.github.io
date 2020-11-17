@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>element-ui table 二次封装 | zzr</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.992cb7aa.css" as="style"><link rel="preload" href="/assets/js/app.b15ac938.js" as="script"><link rel="preload" href="/assets/js/2.84813aa5.js" as="script"><link rel="preload" href="/assets/js/38.547662f9.js" as="script"><link rel="prefetch" href="/assets/js/10.c97d61c6.js"><link rel="prefetch" href="/assets/js/11.5a108636.js"><link rel="prefetch" href="/assets/js/12.371b0a1f.js"><link rel="prefetch" href="/assets/js/13.de4bd4cd.js"><link rel="prefetch" href="/assets/js/14.7d3258d2.js"><link rel="prefetch" href="/assets/js/15.3e52290e.js"><link rel="prefetch" href="/assets/js/16.048d61a6.js"><link rel="prefetch" href="/assets/js/17.6c42a29b.js"><link rel="prefetch" href="/assets/js/18.60f0be46.js"><link rel="prefetch" href="/assets/js/19.89f2321a.js"><link rel="prefetch" href="/assets/js/20.a3b1f205.js"><link rel="prefetch" href="/assets/js/21.fa2f9dab.js"><link rel="prefetch" href="/assets/js/22.9f0efc31.js"><link rel="prefetch" href="/assets/js/23.19f6b233.js"><link rel="prefetch" href="/assets/js/24.f3a043af.js"><link rel="prefetch" href="/assets/js/25.226393a9.js"><link rel="prefetch" href="/assets/js/26.94ffbcb5.js"><link rel="prefetch" href="/assets/js/27.5d96317d.js"><link rel="prefetch" href="/assets/js/28.0611eacd.js"><link rel="prefetch" href="/assets/js/29.aa4d2b41.js"><link rel="prefetch" href="/assets/js/3.90d40da7.js"><link rel="prefetch" href="/assets/js/30.1b26cce0.js"><link rel="prefetch" href="/assets/js/31.b13ec9ce.js"><link rel="prefetch" href="/assets/js/32.a109e1b7.js"><link rel="prefetch" href="/assets/js/33.abbd9c0f.js"><link rel="prefetch" href="/assets/js/34.5a9f6f1f.js"><link rel="prefetch" href="/assets/js/35.7ca7adf9.js"><link rel="prefetch" href="/assets/js/36.0a3c2aed.js"><link rel="prefetch" href="/assets/js/37.4e08bb6a.js"><link rel="prefetch" href="/assets/js/39.900b0212.js"><link rel="prefetch" href="/assets/js/4.7659a456.js"><link rel="prefetch" href="/assets/js/40.fc15cb95.js"><link rel="prefetch" href="/assets/js/41.f80790cf.js"><link rel="prefetch" href="/assets/js/42.d885c968.js"><link rel="prefetch" href="/assets/js/43.c5e366dc.js"><link rel="prefetch" href="/assets/js/5.66bb5b27.js"><link rel="prefetch" href="/assets/js/6.f95ea75e.js"><link rel="prefetch" href="/assets/js/7.b10a0e94.js"><link rel="prefetch" href="/assets/js/8.89a503e5.js"><link rel="prefetch" href="/assets/js/9.2dca9599.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.992cb7aa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zzr</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link">
+  nuxt
+</a></div><div class="nav-item"><a href="/codereview/" class="nav-link">
+  编码规范
+</a></div><div class="nav-item"><a href="/question/" class="nav-link">
+  问题收录
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  vue
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link">
+  nuxt
+</a></div><div class="nav-item"><a href="/codereview/" class="nav-link">
+  编码规范
+</a></div><div class="nav-item"><a href="/question/" class="nav-link">
+  问题收录
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/" aria-current="page" class="sidebar-link">vue</a></li><li><a href="/vue/vue.config.html" class="sidebar-link">vue.config</a></li><li><a href="/vue/directive.html" class="sidebar-link">指令</a></li><li><a href="/vue/table.html" aria-current="page" class="active sidebar-link">表格</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/table.html#element-ui-table-二次封装" class="sidebar-link">element-ui table 二次封装</a></li></ul></li><li><a href="/vue/plugins.html" class="sidebar-link">vue常用插件</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="element-ui-table-二次封装"><a href="#element-ui-table-二次封装" class="header-anchor">#</a> element-ui table 二次封装</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table</span>
+      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myTable<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tableData<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">v-bind</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$attrs<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">v-on</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$listeners<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">@selection-change</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>_handleSelectionChange<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">stripe</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+        <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showIndex<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>50<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+        <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>selection<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:selectable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>_selectDisabled<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>80<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>checked &amp;&amp; tableData.length<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+        <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(v, k) in columns<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>k<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:prop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>v.prop<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>v.label<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">v-bind</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>v<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>v.width || <span class="token punctuation">'</span>auto<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scope<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">:name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>v.scope<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:row</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scope.row<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:$index</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scope.$index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            {{_showColData(scope.row, scope.$index, v)}}
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    tableData<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Array
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    columns<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Array
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    checked<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> Boolean
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    showIndex<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> Boolean
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      selectedRows<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  watch<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">tablerRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>myTable
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取选中的行</span>
+    <span class="token function">getSelectRows</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>selectedRows
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 选择的回调</span>
+    <span class="token function">_handleSelectionChange</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>selectedRows <span class="token operator">=</span> val
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'changrows'</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">_showColData</span><span class="token punctuation">(</span><span class="token parameter">row<span class="token punctuation">,</span> index<span class="token punctuation">,</span> col</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>col<span class="token punctuation">.</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> collValue <span class="token operator">=</span> row<span class="token punctuation">[</span>col<span class="token punctuation">.</span>prop<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> propArr <span class="token operator">=</span> col<span class="token punctuation">.</span>prop<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 链式处理</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>propArr <span class="token operator">&amp;&amp;</span> propArr<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">let</span> eachRow <span class="token operator">=</span> row<span class="token punctuation">;</span>
+          propArr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">prop</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            collValue <span class="token operator">=</span> eachRow<span class="token punctuation">[</span>prop<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            eachRow <span class="token operator">=</span> collValue <span class="token comment">// 每次更新一下row的字段深度</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// formatter 处理</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>col<span class="token punctuation">.</span>formatter <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> col<span class="token punctuation">.</span>formatter <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> col<span class="token punctuation">.</span><span class="token function">formatter</span><span class="token punctuation">(</span>row<span class="token punctuation">,</span> col<span class="token punctuation">,</span> collValue<span class="token punctuation">,</span> index<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> collValue
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 是否禁用</span>
+    <span class="token function">_selectDisabled</span><span class="token punctuation">(</span><span class="token parameter">row</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> row<span class="token punctuation">.</span>disabled <span class="token operator">!==</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 处理选中指定的 row</span>
+    <span class="token function">toggleSelection</span><span class="token punctuation">(</span><span class="token parameter">rows</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>rows<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        rows<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">row</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>myTable<span class="token punctuation">.</span><span class="token function">toggleRowSelection</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>myTable<span class="token punctuation">.</span><span class="token function">clearSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/directive.html" class="prev">
+        指令
+      </a></span> <span class="next"><a href="/vue/plugins.html">
+        vue常用插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b15ac938.js" defer></script><script src="/assets/js/2.84813aa5.js" defer></script><script src="/assets/js/38.547662f9.js" defer></script>
+  </body>
+</html>
