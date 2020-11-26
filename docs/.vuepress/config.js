@@ -25,6 +25,10 @@ module.exports = {
         link: '/nuxt/'
       },
       {
+        text: 'node',
+        link: '/node/'
+      },
+      {
         text: '编码规范',
         link: '/codereview/'
       },
@@ -55,7 +59,8 @@ module.exports = {
         ['vue.config', 'vue.config'],
         ['directive', '指令'],
         ['table', '表格'],
-        ['plugins', 'vue常用插件']
+        ['plugins', 'vue常用插件'],
+        ['auto-blog', 'vuepress + github Actions']
       ],
       '/webpack/': [
         ['', 'webpack'],
@@ -76,6 +81,10 @@ module.exports = {
         ['html', 'html'],
         ['js', 'js'],
         ['network', 'network']
+      ],
+      '/node/': [
+        ['', 'node'],
+        ['mongodb', 'mongodb']
       ]
     }
   }

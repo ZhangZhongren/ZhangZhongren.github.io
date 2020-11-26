@@ -3,17 +3,17 @@
 
 [taro](taro/)
 
-[nodeScripts](npmScripts/)
+<!-- [nodeScripts](npmScripts/) -->
 
 [axios](axios/)
 
-[webpack](webpack/)
+<!-- [webpack](webpack/) -->
 
 [面试题](面试题/)
 
-[前端性能优化](optimization/)
+<!-- [前端性能优化](optimization/) -->
 
-[webgl](webgl/)
+<!-- [webgl](webgl/) -->
 
 ## 学习资源
 
@@ -29,9 +29,9 @@
 
 
 
-### ui框架
+<!-- ### ui框架
 
-[layui 原生 HTML/CSS/JS ](https://github.com/sentsin/layui)
+[layui 原生 HTML/CSS/JS ](https://github.com/sentsin/layui) -->
 
 ### 开源项目
 
@@ -68,7 +68,7 @@ javascript 高级程序设计自己找一下pdf或者私聊我要资源
 
 [现代 JavaScript 教程](https://github.com/javascript-tutorial/zh.javascript.info/tree/master)
 
-### 高手过招
+<!-- ### 高手过招 -->
 
 学习函数式编程 建议阅读 javascript函数式编程 看 [lodash](https://github.com/lodash/lodash) 源码
 
