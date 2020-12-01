@@ -84,7 +84,8 @@ module.exports = {
       ],
       '/node/': [
         ['', 'node'],
-        ['mongodb', 'mongodb']
+        ['mongodb', 'mongodb'],
+        ['mysql', 'mysql']
       ]
     }
   }
