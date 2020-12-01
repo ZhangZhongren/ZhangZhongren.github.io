@@ -60,7 +60,8 @@ module.exports = {
         ['directive', '指令'],
         ['table', '表格'],
         ['plugins', 'vue常用插件'],
-        ['auto-blog', 'vuepress + github Actions']
+        ['auto-blog', 'vuepress + github Actions'],
+        ['vueMobildUI', 'vueMobildUI']
       ],
       '/webpack/': [
         ['', 'webpack'],
