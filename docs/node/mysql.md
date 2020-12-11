@@ -65,3 +65,13 @@
   ```
     mysql.server stop
   ```
+
+## 一个靠谱的mysql下载地址
+
+  [mysql](https://downloads.mysql.com/archives/community/)
+
+### -bash: mysql: command not found
+
+  ```
+    alias mysql=/usr/local/mysql/bin/mysql
+  ```
