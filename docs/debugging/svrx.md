@@ -64,3 +64,7 @@ svrx --route router.js -p json-server
 ```
 http://localhost:8000/api/list
 ```
+
+## server-x 集成 vue-cli / creat-react-app
+
+[资料](https://docs.svrx.io/zh/practice/integration.html)
