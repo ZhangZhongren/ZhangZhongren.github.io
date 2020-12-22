@@ -35,6 +35,10 @@ module.exports = {
       {
         text: '问题收录',
         link: '/question/'
+      },
+      {
+        text: '工具',
+        link: '/debugging/'
       }
     ],
     sidebar: {
@@ -87,6 +91,10 @@ module.exports = {
         ['', 'node'],
         ['mongodb', 'mongodb'],
         ['mysql', 'mysql']
+      ],
+      '/debugging/': [
+        ['', 'guide'],
+        ['svrx', 'svrx']
       ]
     }
   }
