@@ -38,3 +38,28 @@ function getTime(time) {
 | type | .hours | .minutes | .seconds |
 |:-----|:-------|:---------|:---------|
 |Object| 小时   | 分钟      | 秒       |
+
+## 获取 n个月后今天的时间戳
+
+``` js
+/*
+* n 月份数
+*/
+function _getNMounthLatterTimes(n) {
+    let days = 0
+    let date = new Date()
+    let mounth = date.getMonth() + 1
+    let year = date.getFullYear()
+    let day = date.getDate()
+    let lastDay = 0
+    for(let i = mounth; i <= mounth + n; i++) {
+      days += new Date(i > 12 ? year + ~~(i/12) : year,i > 12 ? i % 12 : i,0).getDate();
+      i === mounth + 6 && (lastDay = new Date(year,i > 12 ? i % 12 : i,0).getDate())
+    }
+    if (day > lastDay) {
+      days += day - lastDay
+    }
+    return new Date().getTime() + days * 86400000
+  }
+
+```
