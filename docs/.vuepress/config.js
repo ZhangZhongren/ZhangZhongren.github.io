@@ -39,6 +39,10 @@ module.exports = {
       {
         text: '工具',
         link: '/debugging/'
+      },
+      {
+        text: '架构',
+        link: '/schema/'
       }
     ],
     sidebar: {
@@ -95,6 +99,9 @@ module.exports = {
       '/debugging/': [
         ['', 'guide'],
         ['svrx', 'svrx']
+      ],
+      '/schema/': [
+        ['', '管理系统']
       ]
     }
   }
