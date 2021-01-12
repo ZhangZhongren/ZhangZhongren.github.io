@@ -111,3 +111,26 @@ function cloneDeep(params) {
   }
 }
 ```
+
+### 截取字符串 按照字节数计算
+
+``` js
+ cutString(str, len, suffix = ''){
+      if (!str) return ""
+      if(len<= 0) return ""
+      var templen=0;
+      for (let i=0; i<str.length; i++){
+        if(str.charCodeAt(i)>255){
+          templen+=2;
+        } else {
+          templen++
+        }
+        if (templen == len){
+          return str.substring(0,i + 1) + suffix
+        } else if (templen >len){
+          return str.substring(0, i) + suffix
+        }
+      }
+      return str;
+    }
+```

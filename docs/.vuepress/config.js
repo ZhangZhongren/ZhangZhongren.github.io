@@ -101,7 +101,8 @@ module.exports = {
         ['svrx', 'svrx']
       ],
       '/schema/': [
-        ['', '管理系统']
+        ['', '管理系统'],
+        ['npm', 'npm常用命令']
       ]
     }
   }
