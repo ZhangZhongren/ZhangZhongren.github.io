@@ -68,3 +68,9 @@ http://localhost:8000/api/list
 ## server-x 集成 vue-cli / creat-react-app
 
 [资料](https://docs.svrx.io/zh/practice/integration.html)
+
+## svrx 将本地服务发不到公网
+
+```
+svrx --localtunnel
+```
