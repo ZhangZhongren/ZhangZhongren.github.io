@@ -99,7 +99,8 @@ module.exports = {
       ],
       '/debugging/': [
         ['', 'guide'],
-        ['svrx', 'svrx']
+        ['svrx', 'svrx'],
+        ['treer', 'treer']
       ],
       '/schema/': [
         ['', '管理系统'],
