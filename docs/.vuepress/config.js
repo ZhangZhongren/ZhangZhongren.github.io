@@ -21,10 +21,6 @@ module.exports = {
         link: '/webpack/'
       },
       {
-        text: 'nuxt',
-        link: '/nuxt/'
-      },
-      {
         text: 'node',
         link: '/node/'
       },
@@ -43,6 +39,10 @@ module.exports = {
       {
         text: '架构',
         link: '/schema/'
+      },
+      {
+        text: 'leetcode',
+        link: '/leetcode/'
       }
     ],
     sidebar: {
@@ -70,15 +70,13 @@ module.exports = {
         ['plugins', 'vue常用插件'],
         ['auto-blog', 'vuepress + github Actions'],
         ['vueMobildUI', 'vueMobildUI'],
-        ['vue3-ts', 'vue3-ts']
+        ['vue3-ts', 'vue3-ts'],
+        ['nuxt', 'nuxt']
       ],
       '/webpack/': [
         ['', 'webpack'],
         ['webpackdoc', 'webpack创建工程'],
         ['vue-cli3', 'vue-cli3 相关配置']
-      ],
-      '/nuxt/': [
-        ['', 'nuxt']
       ],
       '/codereview/': [
         ['', '相关文档'],
@@ -105,6 +103,10 @@ module.exports = {
       '/schema/': [
         ['', '管理系统'],
         ['npm', 'npm常用命令']
+      ],
+      '/leetcode/': [
+        ['', 'leetcode'],
+        ['array', '数组']
       ]
     }
   }
