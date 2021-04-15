@@ -31,6 +31,6 @@ npm cache clean --force
 
 ## http请求测试工具
 
-httpoie
+httpie
 
 [官网](https://httpie.io/docs#installation)

@@ -1,7 +1,8 @@
 module.exports = {
   title: 'zzr',
   base: "/",
-  description: '',
+  description: '博客',
+  serviceWorker: true,
   themeConfig: {
     nav: [
       // {
@@ -29,8 +30,8 @@ module.exports = {
         link: '/codereview/'
       },
       {
-        text: '问题收录',
-        link: '/question/'
+        text: 'css',
+        link: '/css/button'
       },
       {
         text: '工具',
@@ -83,12 +84,8 @@ module.exports = {
         ['prettier', 'prettier'],
         ['eslint', 'eslint']
       ],
-      '/question/': [
-        ['', '问题收录'],
-        ['css', 'css'],
-        ['html', 'html'],
-        ['js', 'js'],
-        ['network', 'network']
+      '/css/': [
+        ['button', '按钮']
       ],
       '/node/': [
         ['', 'node'],
@@ -109,5 +106,8 @@ module.exports = {
         ['array', '数组']
       ]
     }
+  },
+  Markdown: {
+    lineNumbers: true
   }
 }
