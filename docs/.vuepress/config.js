@@ -60,6 +60,7 @@ module.exports = {
         ['jsFunc', 'jsFunc'],
         ['loadFile', '文件下载'],
         ['event', '事件'],
+        ['手写代码', '手写代码'],
         // ['question', '面试题'],
         // ['string', '字符串常用操作']
       ],
