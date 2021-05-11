@@ -6,7 +6,7 @@
 
 ### 2、[vue-element-admin](https://panjiachen.github.io/vue-element-admin-site/zh/)
 
-[demo](https://d2.pub/d2-admin/preview/#/index)
+[demo](https://panjiachen.github.io/vue-element-admin/#/login?redirect=%2Fdashboard)
 
 ### 3、[JEECG-BOOT](https://panjiachen.github.io/vue-element-admin-site/zh/)
 
