@@ -100,7 +100,8 @@ module.exports = {
       ],
       '/schema/': [
         ['', '管理系统'],
-        ['npm', 'npm常用命令']
+        ['npm', 'npm常用命令'],
+        ['webpack升级', 'webpack升级5.x']
       ],
       '/leetcode/': [
         ['', 'leetcode'],

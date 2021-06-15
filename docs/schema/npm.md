@@ -35,4 +35,15 @@ npm config set registry XXXX
       }
     }
     ```
+  scripts 里面增加  "preinstall": "npx npm-force-resolutions"
+
 3. 依赖重新安装
+
+
+## 产看项目中依赖安装版本情况
+
+项目根目录下执行
+
+``` node
+npm ls loddash
+```
