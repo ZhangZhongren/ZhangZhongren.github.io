@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack4.X升级webpack5 | zzr</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.5bc93752.css" as="style"><link rel="preload" href="/assets/js/app.bef2e7dc.js" as="script"><link rel="preload" href="/assets/js/2.b21d2641.js" as="script"><link rel="preload" href="/assets/js/51.20545a18.js" as="script"><link rel="prefetch" href="/assets/js/10.843725f2.js"><link rel="prefetch" href="/assets/js/11.1dff998f.js"><link rel="prefetch" href="/assets/js/12.8041df4b.js"><link rel="prefetch" href="/assets/js/13.7c8b369b.js"><link rel="prefetch" href="/assets/js/14.c5a59267.js"><link rel="prefetch" href="/assets/js/15.612b52cb.js"><link rel="prefetch" href="/assets/js/16.f04cbce9.js"><link rel="prefetch" href="/assets/js/17.2a3a07ec.js"><link rel="prefetch" href="/assets/js/18.07dc4ef5.js"><link rel="prefetch" href="/assets/js/19.0080bf2c.js"><link rel="prefetch" href="/assets/js/20.8d082de7.js"><link rel="prefetch" href="/assets/js/21.c58a0efd.js"><link rel="prefetch" href="/assets/js/22.f7e9feab.js"><link rel="prefetch" href="/assets/js/23.a3bb147d.js"><link rel="prefetch" href="/assets/js/24.fe13e702.js"><link rel="prefetch" href="/assets/js/25.0978b967.js"><link rel="prefetch" href="/assets/js/26.3de99904.js"><link rel="prefetch" href="/assets/js/27.368145a4.js"><link rel="prefetch" href="/assets/js/28.915fc349.js"><link rel="prefetch" href="/assets/js/29.02066790.js"><link rel="prefetch" href="/assets/js/3.3cfad7ad.js"><link rel="prefetch" href="/assets/js/30.905e7e08.js"><link rel="prefetch" href="/assets/js/31.95d72c94.js"><link rel="prefetch" href="/assets/js/32.b8e5cbeb.js"><link rel="prefetch" href="/assets/js/33.4ee1d6df.js"><link rel="prefetch" href="/assets/js/34.0a4e53e4.js"><link rel="prefetch" href="/assets/js/35.e277da16.js"><link rel="prefetch" href="/assets/js/36.bf66480d.js"><link rel="prefetch" href="/assets/js/37.2befb573.js"><link rel="prefetch" href="/assets/js/38.e57048d1.js"><link rel="prefetch" href="/assets/js/39.d2564a34.js"><link rel="prefetch" href="/assets/js/4.99c9d6e1.js"><link rel="prefetch" href="/assets/js/40.a9218018.js"><link rel="prefetch" href="/assets/js/41.686583c0.js"><link rel="prefetch" href="/assets/js/42.86bfac21.js"><link rel="prefetch" href="/assets/js/43.83da6c05.js"><link rel="prefetch" href="/assets/js/44.589ab54a.js"><link rel="prefetch" href="/assets/js/45.3c2621f7.js"><link rel="prefetch" href="/assets/js/46.0565f263.js"><link rel="prefetch" href="/assets/js/47.b0d31c6a.js"><link rel="prefetch" href="/assets/js/48.8189f1e8.js"><link rel="prefetch" href="/assets/js/49.1f58d742.js"><link rel="prefetch" href="/assets/js/5.499b970c.js"><link rel="prefetch" href="/assets/js/50.47d7ff83.js"><link rel="prefetch" href="/assets/js/52.4397e0ef.js"><link rel="prefetch" href="/assets/js/53.2e67e941.js"><link rel="prefetch" href="/assets/js/54.45c1e558.js"><link rel="prefetch" href="/assets/js/55.da67b521.js"><link rel="prefetch" href="/assets/js/56.f80d0fbb.js"><link rel="prefetch" href="/assets/js/57.fe6942a2.js"><link rel="prefetch" href="/assets/js/58.bb5b52a8.js"><link rel="prefetch" href="/assets/js/59.b521a202.js"><link rel="prefetch" href="/assets/js/6.dc96fc8c.js"><link rel="prefetch" href="/assets/js/60.1ff84852.js"><link rel="prefetch" href="/assets/js/61.86cf5157.js"><link rel="prefetch" href="/assets/js/62.8f783239.js"><link rel="prefetch" href="/assets/js/63.3ccf04e8.js"><link rel="prefetch" href="/assets/js/7.c817abe3.js"><link rel="prefetch" href="/assets/js/8.d99d5a83.js"><link rel="prefetch" href="/assets/js/9.6ba658b1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5bc93752.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zzr</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/codereview/" class="nav-link">
+  编码规范
+</a></div><div class="nav-item"><a href="/css/button.html" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/debugging/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/schema/" class="nav-link router-link-active">
+  架构
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/codereview/" class="nav-link">
+  编码规范
+</a></div><div class="nav-item"><a href="/css/button.html" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/debugging/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/schema/" class="nav-link router-link-active">
+  架构
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/schema/" aria-current="page" class="sidebar-link">管理系统</a></li><li><a href="/schema/npm.html" class="sidebar-link">npm常用命令</a></li><li><a href="/schema/webpack升级.html" class="active sidebar-link">webpack升级5.x</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/schema/webpack升级.html#webpack4-x升级webpack5" class="sidebar-link">webpack4.X升级webpack5</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="webpack4-x升级webpack5"><a href="#webpack4-x升级webpack5" class="header-anchor">#</a> webpack4.X升级webpack5</h2> <ol><li><p>先按照<a href="https://webpack.docschina.org/migrate/5/" target="_blank" rel="noopener noreferrer">官网升级文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，完成基本步骤</p></li> <li><p>webpack.NamedModulesPlugin is not a constructor</p></li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>use config.optimization.namedModules 替换 'NamedModulesPlugin' is deprecated</p></div> <ol start="3"><li>configuration.devtool should match pattern</li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>devtool 字段匹配更为严格 设置为 '' 或者 'source-map'</p></div> <ol start="4"><li>webpack.HashedModuleIdsPlugin is not a constructor</li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>use config.optimization.namedModules 替换 'HashedModuleIdsPlugin' is deprecated</p></div> <ol start="5"><li>chunk.files was changed from Array to Set (indexing Array is deprecated)</li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>uglifyjs-webpack-plugin 插件导致，升级版本即可解决</p></div> <ol start="6"><li>DeprecationWarning: Module.issuer: Use new ModuleGraph API</li></ol> <p>TODO</p> <ol start="7"><li></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/schema/npm.html" class="prev">
+        npm常用命令
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.bef2e7dc.js" defer></script><script src="/assets/js/2.b21d2641.js" defer></script><script src="/assets/js/51.20545a18.js" defer></script>
+  </body>
+</html>
