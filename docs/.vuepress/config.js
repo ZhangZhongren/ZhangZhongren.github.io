@@ -101,7 +101,8 @@ module.exports = {
       '/schema/': [
         ['', '管理系统'],
         ['npm', 'npm常用命令'],
-        ['webpack升级', 'webpack升级5.x']
+        ['webpack升级', 'webpack升级5.x'],
+        ['postcss-loader-env', 'postcss-loader根据环境变量配置'],
       ],
       '/leetcode/': [
         ['', 'leetcode'],

@@ -57,3 +57,5 @@ npm ls loddash
 5、跳到第n行"ngg" 或 "nG" 或 ":n"
 6、移动光标到屏幕顶端"H"，移动到屏幕中间"M"，移动到底部"L"
 7、移动到上次编辑文件的位置 "`"
+
+[菜鸟vim/vi](https://www.runoob.com/linux/linux-vim.html)
