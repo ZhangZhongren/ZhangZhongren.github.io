@@ -48,6 +48,7 @@ function svgToCanvas() {
 
 ## 两个对象是否相等
 
+1、 通过对比jspn字符串是否相等
 ::: tip
 适用 json 形式的 对象
 :::
@@ -59,6 +60,8 @@ function objectIs(obj1, obj2) {
 }
 
 ```
+
+2、 利用工具deep-equal
 
 ## 字符串按大写祖母分割成数组
 
