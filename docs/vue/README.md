@@ -479,6 +479,10 @@ module.exports = {
 参数 布尔类型 true 遮罩 false 取消
 :::
 
+## v-model 实现 //TODO
 
+## $emit $on $once $off
 
+发布/订阅模式
+  
   
