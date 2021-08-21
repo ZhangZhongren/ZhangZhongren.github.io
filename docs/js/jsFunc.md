@@ -137,3 +137,26 @@ function cloneDeep(params) {
       return str;
     }
 ```
+
+
+### 使用正则获取url中的参数
+
+``` js
+let url = 'http://www.zzr.com?a=1&b=2&c=3'
+
+function parseUrlByRegExp (url) {
+  let urlReg = new RegExp('(\\w+)=(\\w+)(?:&|$)', 'g')
+  let keyReg = new RegExp('(\\w+)=')
+  let valReg = new RegExp('=(\\w+)(?:&|$)')
+  let resp = {}
+  url.match(urlReg).forEach(item => {
+    let key = item.match(keyReg)[1]
+    let val = item.match(valReg)[1]
+    console.log(key, val)
+    resp[key] = val
+  })
+  return resp
+}
+
+console.log(parseUrl(url))
+```
