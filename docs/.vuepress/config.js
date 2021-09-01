@@ -100,7 +100,8 @@ module.exports = {
         ['npm', 'npm常用命令'],
         ['webpack升级', 'webpack升级5.x'],
         ['postcss-loader-env', 'postcss-loader根据环境变量配置'],
-        ['npm-package', 'npm 工具包收录']
+        ['npm-package', 'npm 工具包收录'],
+        ['资料', '资料']
       ]
     }
   },
