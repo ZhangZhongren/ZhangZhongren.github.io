@@ -1,3 +1,9 @@
+## 浏览器基本信息
+
+<navigator-index />
+
+> MDN --> [navigator](https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator)
+
 ## 管理系统
 
 ### 1、[D2admin](https://d2.pub/zh/doc/d2-admin/)
