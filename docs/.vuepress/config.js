@@ -1,48 +1,33 @@
 module.exports = {
   title: 'zzr',
-  base: "/",
+  base: '/',
   description: '博客',
   serviceWorker: true,
   themeConfig: {
     nav: [
-      // {
-      //   text: "home",
-      //   link: "/"
-      // },
       {
-        text: "js",
-        link: "/js/"
+        text: 'javascript',
+        ariaLabel: 'javascript',
+        items: [
+          { text: 'js', link: '/js/' },
+          { text: 'vue', link: '/vue/' },
+          { text: 'webpack', link: '/webpack/' },
+          { text: 'node', link: '/node/' },
+          { text: '编码规范', link: '/codereview/' },
+          { text: 'css', link: '/css/button' },
+          { text: '工具', link: '/debugging/' },
+          { text: '架构', link: '/schema/' }
+        ]
       },
       {
-        text: "vue",
-        link: "/vue/"
-      },
-      {
-        text: 'webpack',
-        link: '/webpack/'
-      },
-      {
-        text: 'node',
-        link: '/node/'
-      },
-      {
-        text: '编码规范',
-        link: '/codereview/'
-      },
-      {
-        text: 'css',
-        link: '/css/button'
-      },
-      {
-        text: '工具',
-        link: '/debugging/'
-      },
-      {
-        text: '架构',
-        link: '/schema/'
+        text: 'components',
+        link: '/components/'
       }
     ],
     sidebar: {
+      '/components/': [
+        ['waterfallFlow', '瀑布流']
+      ],
       '/js/': [
         ['', 'js'],
         ['array', '数组'],
@@ -107,5 +92,8 @@ module.exports = {
   },
   Markdown: {
     lineNumbers: true
-  }
+  },
+  plugins: [
+    'demo-container'
+  ]
 }

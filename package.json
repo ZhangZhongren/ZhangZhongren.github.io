@@ -4,15 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "npx vuepress dev docs",
+    "docs:dev": "vuepress dev docs",
     "dev": "sudo npm run docs:dev",
     "docs:build": "vuepress build docs",
-    "build": "npm run docs:build",
-    "publish": "bash deploy.sh"
+    "lint": "eslint --ext .js,.vue docs",
+    "fix": "eslint --ext .js,.vue docs --fix"
   },
   "author": "zzr",
   "license": "ISC",
   "devDependencies": {
+    "async-validator": "^1.11.5",
+    "babel-eslint": "10.0.1",
+    "element-ui": "^2.15.6",
+    "eslint": "5.15.3",
+    "eslint-plugin-vue": "5.2.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^7.0.1",
     "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "vuepress-plugin-demo-container": "^0.2.0"
   }
 }
