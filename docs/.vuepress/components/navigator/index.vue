@@ -7,13 +7,13 @@
         <!-- <td>描述</td> -->
       </thead>
       <tr v-for="(item, index) in navigator" :key="index">
-        <td class="label">{{ index}}</td>
+        <td class="label">{{ index }}</td>
         <td class="value">{{ item }}</td>
         <!-- <td class="label">{{ KEY_MAP[index]}}</td> -->
       </tr>
       <tr>
         <td>languages</td>
-        <td>{{winNavigator.languages}}</td>
+        <td>{{ winNavigator.languages }}</td>
       </tr>
     </table>
   </div>
@@ -31,8 +31,8 @@ export default {
   name: 'navigator',
   components: {},
   props: {},
-  data () {
-    this.KEY_MAP = KEY_MAP
+  data() {
+    // this.KEY_MAP = KEY_MAP
     return {
       navigator: null,
       list: [
@@ -40,9 +40,14 @@ export default {
       ]
     }
   },
+  computed: {
+    winNavigator() {
+      return window.navigator
+    }
+  },
   created() {
-    let obj = {}
-    for (let i in  window.navigator) {
+    const obj = {}
+    for (const i in window.navigator) {
       if (typeof window.navigator[i] !== 'function') {
         if (typeof window.navigator[i] !== 'object') {
           obj[i] = window.navigator[i]
@@ -50,11 +55,6 @@ export default {
       }
     }
     this.navigator = obj
-  },
-  computed: {
-    winNavigator() {
-      return window.navigator
-    }
   }
 }
 </script>
