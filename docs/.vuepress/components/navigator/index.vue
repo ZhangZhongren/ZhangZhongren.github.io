@@ -42,18 +42,18 @@ export default {
   },
   computed: {
     winNavigator() {
-      return window.navigator
+      return {} // window.navigator
     }
   },
   created() {
     const obj = {}
-    for (const i in window.navigator) {
-      if (typeof window.navigator[i] !== 'function') {
-        if (typeof window.navigator[i] !== 'object') {
-          obj[i] = window.navigator[i]
-        }
-      }
-    }
+    // for (const i in window.navigator) {
+    //   if (typeof window.navigator[i] !== 'function') {
+    //     if (typeof window.navigator[i] !== 'object') {
+    //       obj[i] = window.navigator[i]
+    //     }
+    //   }
+    // }
     this.navigator = obj
   }
 }
