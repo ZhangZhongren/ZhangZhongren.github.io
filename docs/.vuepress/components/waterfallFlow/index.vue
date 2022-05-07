@@ -12,7 +12,6 @@
 <script>
 export default {
   name: 'waterflow',
-  components: {},
   props: {
     list: {
       type: Array,
@@ -34,7 +33,7 @@ export default {
     for (let i = 0; i < this.columns; i++) {
       this.mylist[i] && this.renderList.push([this.mylist.shift()])
     }
-    setTimeout(this.pushData, 0)
+    this.pushData()
   },
   methods: {
     getSlotName(item) {
@@ -43,7 +42,7 @@ export default {
     pushData() {
       this.mylist.length && this.$nextTick(() => {
         this.renderList[this.getMinHeightItemsIndex()].push(this.mylist.shift())
-        setTimeout(this.pushData, 0)
+        this.pushData()
       })
     },
     getMinHeightItemsIndex() {

@@ -5,3 +5,6 @@
 ## 数字操作 [big.js](https://www.npmjs.com/package/big.js)
 
 A small, fast JavaScript library for arbitrary-precision decimal arithmetic.
+
+## [base64-js](https://www.npmjs.com/package/base64-js)
+

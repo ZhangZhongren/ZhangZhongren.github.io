@@ -1,6 +1,9 @@
 module.exports = {
   title: 'zzr',
   base: '/',
+  // head: [
+  //   ['link', { rel: 'icon', href: '/zzr/logo.png' }]
+  // ],
   description: '博客',
   serviceWorker: true,
   themeConfig: {
@@ -68,7 +71,8 @@ module.exports = {
         ['eslint', 'eslint']
       ],
       '/css/': [
-        ['button', '按钮']
+        ['button', '按钮'],
+        ['canvas', 'canvas']
       ],
       '/node/': [
         ['', 'node'],
@@ -86,6 +90,7 @@ module.exports = {
         ['webpack升级', 'webpack升级5.x'],
         ['postcss-loader-env', 'postcss-loader根据环境变量配置'],
         ['npm-package', 'npm 工具包收录'],
+        ['npm-publish', 'npm 私服包管理'],
         ['资料', '资料']
       ]
     }
