@@ -100,5 +100,6 @@ module.exports = {
   },
   plugins: [
     'demo-container'
-  ]
+  ],
+  theme: 'antdocs'
 }
