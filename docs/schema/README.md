@@ -14,7 +14,7 @@
 
 [demo](https://panjiachen.github.io/vue-element-admin/#/login?redirect=%2Fdashboard)
 
-### 3、[JEECG-BOOT](https://panjiachen.github.io/vue-element-admin-site/zh/)
+### 3、[JEECG-BOOT](http://doc.jeecg.com/2043868)
 
 [demo](http://boot.jeecg.com/)
 
